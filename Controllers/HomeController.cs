@@ -23,6 +23,6 @@ public class HomeController : Controller
             return View();
 
         string result = _reverseStringService.Reverse(str);
-        return View((object) result);
+        return View((object) result); // cast is needed to use correct overload
     }
 }
